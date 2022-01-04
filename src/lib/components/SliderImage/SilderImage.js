@@ -20,6 +20,10 @@ const SilderImage = ({
   const refImage = useRef()
   const refLens = useRef()
   const refResult = useRef()
+  
+  useEffect(() => {
+  setIndex(0)
+  }, [])
 
   function getCursorPos(e, imageCurrent) {
     let x = 0
